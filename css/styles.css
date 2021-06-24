@@ -175,6 +175,7 @@ body {
 }
 .section .item {
   margin-left: 30px;
+  flex-basis: calc((100% - 120) / 4);
 }
 .section .title {
   color: var(--title-color);
@@ -209,6 +210,14 @@ body {
   font-size: 14px;
   line-height: 1.7;
   margin: 0px;
+}
+/**/
+.works .list {
+  margin-left: -30px;
+}
+.works .item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 90) / 3);
 }
 /* Наша команда */
 .team .item {
