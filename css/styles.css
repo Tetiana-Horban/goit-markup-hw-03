@@ -59,37 +59,23 @@ body {
   color: var(--accent-color);
 }
 .logo {
-  color: #000000;
-  background-color: white;
-  margin-right: 93px;
-  height: 31px;
-}
-.logo,
-.footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  color: #000000;
+  margin-right: 93px;
 }
 /*Навигация*/
-.nav .logo {
-  margin-top: 21px;
-  margin-bottom: 25px;
-}
 .nav-list {
   display: flex;
-  height: 16px;
-}
-.nav-list .link {
-  margin-top: 30px;
-  margin-bottom: 31px;
 }
 .nav-list .item + .item {
   margin-left: 50px;
 }
 .info {
   margin-left: auto;
-  height: 16px;
 }
 .nav {
   display: flex;
@@ -98,28 +84,29 @@ body {
 .info .link + .link {
   margin-left: 50px;
 }
-.info .link {
-  display: inline;
-}
 .link-nav {
-  color: var(--title-color);
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--title-color);
+
+  padding-top: 36px;
+  padding-bottom: 30px;
 }
 .link-info {
-  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.link-nav.current {
-  color: var(--accent-color);
+
+  color: var(--primary-text-color);
 }
 
-/* Hover Focus */
+/* Hover Focus Current */
+.link-nav.current,
 .link-info:hover,
 .link-nav:hover,
 .address-link:hover,
@@ -130,45 +117,54 @@ body {
 .footer-link:focus {
   color: var(--accent-color);
 }
+
 /*Герой*/
 .hero {
   text-align: center;
-}
-.hero,
-.footer {
+
   background-color: var(--accent-background);
+
+  padding-top: 201px;
+  padding-bottom: 200px;
 }
 .hero-title {
-  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--white-color);
+
   margin-bottom: 30px;
 }
+
 /*Кнопка героя*/
 .button-hero {
-  font-family: inherit;
-  background-color: var(--accent-color);
-  color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   height: 50px;
   min-width: 200px;
-  padding: 10px, 32px;
-  margin-top: 0px;
-  margin-bottom: 200px;
-  display: inline-block;
-  border: 1px solid transparent;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  padding: 10px 32px;
+  border: solid transparent;
 }
 .button-hero:hover {
   background-color: #188ce8;
 }
+
 /*Секции*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section .list {
   display: flex;
   margin-left: -30px;
@@ -177,41 +173,38 @@ body {
   margin-left: 30px;
   flex-basis: calc((100% - 120) / 4);
 }
-.section .title {
-  color: var(--title-color);
-}
-.section {
-  padding-top: 47px;
-  padding-bottom: 47px;
-}
 .heading {
-  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
   color: var(--title-color);
+
+  margin-bottom: 50px;
 }
-.section-title {
-  margin-top: 30px;
+
+.section .title {
+  font-size: 14px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.18;
+
+  color: var(--title-color);
+
+  margin-bottom: 10px;
+}
+.section .text {
+  font-size: 14px;
+  line-height: 1.7;
 }
 /* Особенности */
 .features .title {
   color: var(--title-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
-.features .text {
-  font-size: 14px;
-  line-height: 1.7;
-  margin: 0px;
-}
-/**/
+
+/*Чем мы занимаемся*/
 .works .list {
   margin-left: -30px;
 }
@@ -219,35 +212,44 @@ body {
   margin-left: 30px;
   flex-basis: calc((100% - 90) / 3);
 }
+
 /* Наша команда */
 .team .item {
   text-align: center;
+  padding-bottom: 30px;
 }
 .team .title {
   margin-top: 30px;
 }
 .team .text {
   margin-top: 10px;
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
 }
 .section.team {
   background-color: #f5f4fa;
 }
+
 /*Футер*/
-.footer .container {
-  border: 1px solid transparent;
+.footer {
+  background-color: var(--accent-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: inline-block;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
 }
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-}
-.footer-logo {
-  display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 20px;
 }
 .footer-logo,
 .address-link {
@@ -256,56 +258,56 @@ body {
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
-.address .link {
+/* .address .link {
   display: block;
-}
+} */
 .address .item {
   margin-bottom: 9px;
 }
-.address:last-child {
-  float: none;
-  margin-bottom: 60px;
+.address .item:last-child {
+  margin-bottom: 0px;
 }
+
 /* Портфолио*/
 /* Кнопки портфолио */
 .list.filter {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 16px;
-  margin-left: -8px;
+  margin-bottom: 50px;
+}
+.filter .item + .item {
+  margin-left: 8px;
 }
 .button-portfolio {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-  margin-left: 8px;
-  background: #f5f4fa;
-  color: var(--title-color);
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+
+  background: #f5f4fa;
+  color: var(--title-color);
+
   height: 38px;
   min-width: 73px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: solid transparent;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+
 /* Карточки портфолио */
-.portfolio {
-  margin-top: 34px;
-  padding-bottom: 94px;
-}
 .portfolio .list {
   display: flex;
   flex-wrap: wrap;
+
   margin-top: -27px;
   margin-left: -27px;
 }
@@ -316,20 +318,22 @@ body {
   border: 1px solid #eeeeee;
 }
 .portfolio .title {
-  color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--title-color);
 }
 .portfolio .subject {
-  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
+
+  color: var(--primary-text-color);
 }
 .portfolio .text {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
