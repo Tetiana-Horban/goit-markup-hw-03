@@ -148,6 +148,7 @@ body {
   letter-spacing: 0.06em;
   height: 50px;
   min-width: 200px;
+  cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--white-color);
