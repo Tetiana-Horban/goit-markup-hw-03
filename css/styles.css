@@ -202,6 +202,9 @@ body {
 .nopadding {
   padding-bottom: 0;
 }
+.features .item {
+  width: 270px;
+}
 .features .title {
   color: var(--title-color);
   font-weight: 700;
@@ -220,6 +223,7 @@ body {
 
 /* Наша команда */
 .team .item {
+  width: 270px;
   text-align: center;
 }
 .team .title {
@@ -319,6 +323,7 @@ body {
   margin-left: -27px;
 }
 .portfolio .item {
+  width: 370px;
   margin-top: 27px;
   margin-left: 27px;
   flex-basis: calc((100% - 81px) / 3);
