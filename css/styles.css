@@ -197,6 +197,9 @@ body {
   line-height: 1.7;
 }
 /* Особенности */
+.nopadding {
+  padding-bottom: 0;
+}
 .features .title {
   color: var(--title-color);
   font-weight: 700;
@@ -216,15 +219,17 @@ body {
 /* Наша команда */
 .team .item {
   text-align: center;
-  padding-bottom: 30px;
 }
 .team .title {
-  margin-top: 30px;
+  font-size: 16px;
 }
 .team .text {
-  margin-top: 10px;
   font-size: 16px;
   line-height: 1.18;
+}
+.caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .section.team {
   background-color: #f5f4fa;
